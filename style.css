@@ -1,0 +1,173 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding:0;
+}
+.page-action-cont{
+    height:3rem;
+    background-color:#218c74;
+    display:flex;
+    align-items: flex-end;
+    padding-left: 1rem;
+}
+.page-action{
+    margin:0.5rem;
+    font-size:1.5rem;
+    color:#f1f2f6;
+}
+.cellprop-action-cont{
+    height:3rem;
+    background-color:#ecf0f1;
+    display:flex;
+    align-items:center;
+    padding-left: 1rem;
+}
+.cellprop-action-cont > * {
+margin-right:1rem;
+display: inline-block;
+
+}
+.cellprop-action-cont > *:hover{
+    cursor:pointer;
+}
+.font-family-prop{
+    padding:0.2rem;
+}
+.font-family-size{
+    padding:0.2rem;
+}
+.cellprop-action-cont > select{
+border:none;
+outline: none;
+border-radius:2px;
+}
+.formula-action-cont{
+    height:3rem;
+    background-color:#ecf0f1;
+    padding: 1rem;
+    display:flex;
+    align-items:center;
+    
+}
+.sheet-action-cont{
+    height:3rem;
+    background-color:#ecf0f1;
+    display:flex;
+    align-items: center;
+    padding-left: 0.5rem;
+    
+}
+.grid-cont{
+    height:calc(100vh - 3rem - 3rem - 3rem - 3rem);
+    position:relative;
+    overflow:scroll;
+    background-color:#ecf0f1;
+}
+.sheet-folder-cont{
+background-color:#ecf0f1;
+height:80%;
+width:calc(100vw - 2vw);
+display:flex;
+align-items: center;
+gap:1rem;/*it provide gap b/w two sheet*/
+}
+.sheet-add-icon{
+    width:2vw;
+    margin-left:0.3rem;
+    margin-right:0.3rem;
+}
+.sheet-folder{
+    font-weight:bold;
+    text-decoration: underline;
+    text-decoration-thickness:3px;
+    font-size: 1rem;    
+}
+
+.formula-action-cont > *{
+display:inline-block;
+margin-right:1.2rem;
+
+}
+.formula-action-cont > input{
+    border:none;
+    outline:none;
+}
+.ficon{
+    width:1.5rem;
+}
+.address-bar{
+width:5rem;
+}
+
+.formula-bar{
+height:2rem;
+width:calc(100vw - 5vw - 1rem - 1.2rem - 1.2rem - 1.2rem);
+}
+.top-left-dummy{
+    height:2rem;
+    width:2rem;
+    background-color:slategray;
+    position:fixed;
+    z-index: 4 ;/* prevent from overlapping*/
+}
+.address-col-cont{
+    width:2rem;
+    position: sticky;
+    top:2rem;
+    left:0;
+
+}
+
+.cell-cont{
+
+    position:absolute;
+    top:0;
+    left:2rem;
+    
+    
+}
+.address-row-cont{
+    height:2rem;
+display: flex;
+position:sticky;
+top:0;
+left:2rem;
+z-index:4;
+    }
+.addressCol{
+    height:2rem;
+    text-align:center;
+    width:2rem;
+    border:solid 1px #dfe4ea;
+}
+.addressRow{
+    height:2rem;
+    width:5rem;
+    text-align:center;
+    border:solid 1px #dfe4ea;
+}
+
+            
+.gcell{
+    height:2rem;
+    width:5rem;
+    border:solid 1px #dfe4ea;
+    outline:none;
+}
+.row-cont{
+    display:flex;
+}
+.color-prop{
+    position:relative; /*it will not move from its place*/
+}
+.color-prop > input {
+    opacity: 0; /*hidden input tag*/
+    position:absolute;/*it will move only in parent-cont*/
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+}
+   
